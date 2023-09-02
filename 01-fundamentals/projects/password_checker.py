@@ -14,3 +14,16 @@ HAS_7_CHARS = False
 # 2. Must contain at least one special character (defined in SPECIAL_CHARACTERS)
 # 3. Must include at least one number
 # Tip: You may want to loop over PASSWORDS and use multiple if conditions
+
+def check_length(password):
+    if len(password) < 7:
+        print(f"{password} is not a valid password")
+    elif len(password) >= 7:
+        return 1
+
+def check_special(password):
+
+
+for password in PASSWORDS:
+    if check_length(password):
+        print(f"{password} is a valid password")
